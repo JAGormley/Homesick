@@ -7,7 +7,7 @@ JumpSpeed = 10
 Acceleration = 1
 Friction = 1
 
-var layerId = layer_get_id("refTiles")
+var layerId = layer_get_id("coll2")
 CollisionTileMapId = layer_tilemap_get_id(layerId)
 
 
