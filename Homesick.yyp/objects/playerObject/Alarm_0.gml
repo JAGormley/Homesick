@@ -1,0 +1,2 @@
+/// dashAlarm
+state = scrMoveState
