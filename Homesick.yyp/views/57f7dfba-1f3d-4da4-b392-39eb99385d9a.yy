@@ -8,7 +8,9 @@
         "2aac5d42-e990-4b71-9ca4-f0bab73c0ede",
         "a2abdd08-3279-496c-b192-ead80254315a",
         "4bff69cd-9f0f-43ab-8b3c-f560e9a28976",
-        "2764a808-e4b3-4f9a-b6de-997562d602e6"
+        "02db4670-ac55-46d1-80c1-6fc35bbd383d",
+        "5ec81d56-e012-488a-bcd9-63e89770c020",
+        "db9b5663-7a6d-45b4-9c2c-dfdc4e75157e"
     ],
     "filterType": "GMSprite",
     "folderName": "playerImages",

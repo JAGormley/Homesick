@@ -1,14 +1,17 @@
 ///scrMoveState
 
 scrGetInput()
+var onGround = scrTileCollideAtPoints(CollisionTileMapId, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom])
 
-if move_dash {
+if MoveDashAction && onGround {
 	state = scrDashState
 	alarm[0] = room_speed/3
+} else if MoveCrouchAction && onGround {
+	state = scrCrouchState
 }
 
 // Get the input
-var xInput = (move_right - move_left) * Acceleration;
+var xInput = (MoveRightAction - MoveLeftAction) * Acceleration;
 
 // Horizontal movement
 Velocity[AXES.x] = clamp(Velocity[AXES.x] + xInput, -MaxVelocity[1], MaxVelocity[1]);
@@ -22,22 +25,9 @@ if xInput == 0 {
 Velocity[AXES.y] += Gravity;
 
 // Move and contact tiles
-scrPlayerControlAndCollide(CollisionTileMapId, 32, Velocity);
+scrPlayerControlAndCollide(CollisionTileMapId, TILE_SIZE, Velocity);
 
 // Jumping/Dashing
-var onGround = scrTileCollideAtPoints(CollisionTileMapId, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]);
-if onGround {
-	// Jumping
-	if move_jump {
-		Velocity[AXES.y] = -JumpSpeed;
-	} else if (keyboard_check_pressed("J")) {
-		
-	}
-} else {
-	// Control jump height
-	if move_jump && Velocity[AXES.y] <= -(JumpSpeed/3) {
-		Velocity[AXES.y] = -(JumpSpeed/3);
-	}
-}
+scrHandleJump(onGround)
 
 scrAnimationHandler(Velocity[AXES.x], onGround, false)

@@ -10,17 +10,14 @@ var isDashing = argument2
 
 if xVelocity > 0 {
 	image_xscale = 1 
-	if onGround handleGroundAnim(false, isDashing) else sprite_index = jumping
+	if onGround scrHandleGroundAnim(false, isDashing) else scrHandleJumpAnim()
 } else if xVelocity < 0 {
 	image_xscale = -1
-	if onGround handleGroundAnim(false, isDashing) else sprite_index = jumping
+	if onGround scrHandleGroundAnim(false, isDashing) else scrHandleJumpAnim()
 } else {
-	if onGround handleGroundAnim(true, false) else sprite_index = jumping
+	if onGround scrHandleGroundAnim(true, false) else scrHandleJumpAnim()
 }
 
 //jumping L/R
 //walking L/R
 //standing
-
-
-

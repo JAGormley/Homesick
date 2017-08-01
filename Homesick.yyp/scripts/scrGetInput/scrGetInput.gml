@@ -6,7 +6,9 @@ keyboard_set_map(ord("H"), vk_space);
 keyboard_set_map(ord("S"), vk_down); 
 
 
-move_right = keyboard_check(vk_right)
-move_left = keyboard_check(vk_left)
-move_jump = keyboard_check_pressed(vk_space)
-move_dash = keyboard_check_pressed(ord("M"))
+MoveRightAction = keyboard_check(vk_right)
+MoveLeftAction = keyboard_check(vk_left)
+MoveJumpAction = keyboard_check_pressed(vk_space)
+MoveDashAction = keyboard_check_pressed(ord("M"))
+MoveJumpHeldAction = keyboard_check(vk_space)
+MoveCrouchAction = keyboard_check(vk_down)
