@@ -3,7 +3,7 @@
 scrGetInput()
 var onGround = scrTileCollideAtPoints(CollisionTileMapId, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom])
 
-if MoveDashAction && onGround {
+if MoveDashAction && onGround && Velocity[AXES.x] != 0 {
 	state = scrDashState
 	alarm[0] = room_speed/3
 } else if MoveCrouchAction && onGround {

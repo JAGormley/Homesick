@@ -1,0 +1,42 @@
+@startuml
+
+state Pilot 
+
+state "Pilot Movement States" as Pilot {
+  state Standing
+  state Jumping
+  state Dashing
+  state DashJumping
+  state Crouching
+  state Sliding
+  state Falling
+  state Walking
+  
+  Standing --> Jumping
+  Standing --> Dashing
+  Standing --> Crouching
+  Standing --> Walking
+  Crouching --> Standing
+  Sliding --> Crouching
+  Sliding --> Walking
+  Sliding --> Falling
+  Jumping --> Falling
+  Jumping --> Walking
+  Jumping --> Standing
+  Dashing --> DashJumping
+  Dashing --> Walking
+  Dashing --> Sliding
+  DashJumping --> Dashing
+  DashJumping --> Walking
+}
+
+state FutureStates
+state "Future States" as FutureStates {
+  state Struck
+  state Frozen
+  Frozen : concept
+  state Slow
+  Slow : concept
+}
+
+@enduml

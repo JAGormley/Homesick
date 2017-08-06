@@ -1103,6 +1103,25 @@
             }
         },
         {
+            "Key": "f40dbf1c-8b8b-410d-912a-2b02e9bce0e6",
+            "Value": {
+                "id": "e931ab9d-d6c4-4ec9-90c3-e6dc84a2d443",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/jumpingv3\/jumpingv3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "24ccc17e-8f3b-4fc3-97d6-040588f36df0",

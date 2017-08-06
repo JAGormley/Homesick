@@ -16,8 +16,10 @@ if velocity[AXES.x] > 0 {
 		tileMapId,
 		[bbox_right-1, bbox_top], 
 		[bbox_right-1, bbox_bottom-1],
-		[bbox_right-1, (bbox_bottom-bbox_top)/2 + bbox_top]
-	);
+		[bbox_right-1, (bbox_bottom-bbox_top)/2 + bbox_top],
+		[bbox_right-1, (bbox_bottom-bbox_top)/4 + bbox_top],
+		[bbox_right-1, (bbox_bottom-bbox_top)*3/4 + bbox_top]
+	)
 	if tileRight {
 		x = bbox_right & ~(tileSize-1);
 		x -= bbox_right-x;
@@ -28,8 +30,11 @@ if velocity[AXES.x] > 0 {
 		tileMapId, 
 		[bbox_left, bbox_top], 
 		[bbox_left, bbox_bottom-1],
-		[bbox_left, (bbox_bottom-bbox_top)/2 + bbox_top]
-	);
+		[bbox_left, (bbox_bottom-bbox_top)/2 + bbox_top],
+		[bbox_left, (bbox_bottom-bbox_top)/2 + bbox_top],
+		[bbox_left, (bbox_bottom-bbox_top)/4 + bbox_top],
+		[bbox_left, (bbox_bottom-bbox_top)*3/4 + bbox_top]
+	)
 	if tileLeft {
 		x = bbox_left & ~(tileSize-1);
 		x += tileSize+x-bbox_left;

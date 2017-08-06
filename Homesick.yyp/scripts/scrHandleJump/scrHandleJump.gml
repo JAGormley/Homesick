@@ -15,3 +15,14 @@ if onGround && MoveJumpAction {
 	}
 	Jump = true
 }
+
+
+//if sprite_index != sprCrouchingDown {
+//	sprite_index = sprCrouchingDown
+//	image_index = 0
+//	sprite_set_speed(sprite_index, 28, spritespeed_framespersecond)
+//}
+
+
+//// @TODO this is bad, get number from sprite itself
+//if image_index > 5 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond)
