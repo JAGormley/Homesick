@@ -1,5 +1,8 @@
 ///scrMoveState
 
+
+var idle = ds_map_find_value(global.StatesToSprites, states.idle)
+
 scrGetInput()
 var onGround = scrTileCollideAtPoints(CollisionTileMapId, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom])
 

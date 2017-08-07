@@ -3,7 +3,7 @@
 state Pilot 
 
 state "Pilot Movement States" as Pilot {
-  state Standing
+  state Idle
   state Jumping
   state Dashing
   state DashJumping
@@ -12,17 +12,17 @@ state "Pilot Movement States" as Pilot {
   state Falling
   state Walking
   
-  Standing --> Jumping
-  Standing --> Dashing
-  Standing --> Crouching
-  Standing --> Walking
-  Crouching --> Standing
+  Idle --> Jumping
+  Idle --> Dashing
+  Idle --> Crouching
+  Idle --> Walking
+  Crouching --> Idle
   Sliding --> Crouching
   Sliding --> Walking
   Sliding --> Falling
   Jumping --> Falling
   Jumping --> Walking
-  Jumping --> Standing
+  Jumping --> Idle
   Dashing --> DashJumping
   Dashing --> Walking
   Dashing --> Sliding

@@ -281,7 +281,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/dashing\/dashing.yy",
+                "resourcePath": "sprites\/spDashing\/spDashing.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -395,7 +395,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/standing\/standing.yy",
+                "resourcePath": "sprites\/spIdle\/spIdle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -490,7 +490,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sprCrouchingDown\/sprCrouchingDown.yy",
+                "resourcePath": "sprites\/spCrouchingDown\/spCrouchingDown.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -704,6 +704,44 @@
             }
         },
         {
+            "Key": "9800e8a3-3a7c-4884-80c9-fad4e95c222b",
+            "Value": {
+                "id": "863c2ba4-3d15-4a98-9a08-f7875490e8a6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spSliding\/spSliding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9e2388d1-8525-4487-91ac-885f48a4eafb",
+            "Value": {
+                "id": "33d498c1-5900-4b04-bb85-cac5037c6048",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/9e2388d1-8525-4487-91ac-885f48a4eafb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a181f491-d800-4d3a-94c3-f67b66e3be34",
             "Value": {
                 "id": "e4c1b276-fab1-4605-95ee-e501e395bf67",
@@ -737,7 +775,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/walking\/walking.yy",
+                "resourcePath": "sprites\/spWalking\/spWalking.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -796,6 +834,25 @@
                 ],
                 "resourcePath": "scripts\/scrMoveState\/scrMoveState.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bfafea57-2aeb-4667-8f51-4be1943c0576",
+            "Value": {
+                "id": "b0745f27-4d69-417c-9e2b-d0a0802f212f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/initRoom\/initRoom.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -946,7 +1003,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sprCrouchingUp\/sprCrouchingUp.yy",
+                "resourcePath": "sprites\/spCrouchingUp\/spCrouchingUp.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1117,7 +1174,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/jumpingv3\/jumpingv3.yy",
+                "resourcePath": "sprites\/spJumping\/spJumping.yy",
                 "resourceType": "GMSprite"
             }
         },
