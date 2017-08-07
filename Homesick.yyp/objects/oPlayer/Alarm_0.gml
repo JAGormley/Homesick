@@ -1,2 +1,1 @@
-/// dashAlarm
-if !Jump state = scrMoveState
+scStateBrain(states.dashing, true)

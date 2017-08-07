@@ -47,8 +47,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_3800ADC",
-                    "x": 720,
-                    "y": 656,
+                    "x": 640,
+                    "y": 992,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -71,8 +71,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_289D5548",
-                    "x": 720,
-                    "y": 656,
+                    "x": 592,
+                    "y": 992,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -82,7 +82,7 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_289D5548",
                     "objId": "0df84e53-99ab-4596-9459-79ec500d7e80",
-                    "rotation": -9.301067,
+                    "rotation": 0.143496513,
                     "scaleX": 1,
                     "scaleY": 1
                 },

@@ -9,6 +9,7 @@ enum states {
 	idle,
 	walking,
 	jumping,
+	falling,
 	dashing,
 	dashJumping,
 	crouchingUp,
@@ -16,16 +17,6 @@ enum states {
 	sliding
 }
 
-enum statesToAnimationSpeeds {
-	idle = 0,
-	walking = 12,
-	jumping = 12,
-	dashing = 10,
-	dashJumping = 12,
-	crouchingDown = 28,
-	crouchingUp = 35,
-	sliding = 10
-}
 #macro STATES states
 
 

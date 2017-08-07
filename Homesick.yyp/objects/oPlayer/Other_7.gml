@@ -1,1 +1,1 @@
-if sprite_index == sprCrouchingUp state = scrMoveState
+if sprite_index == spCrouchingUp state = scWalking
