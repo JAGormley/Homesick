@@ -172,25 +172,6 @@
             }
         },
         {
-            "Key": "14d650ed-44b6-426d-8eb4-aa4d421665d0",
-            "Value": {
-                "id": "cd9c422f-096f-4621-a817-026194438b06",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/scrHandleJumpAnim\/scrHandleJumpAnim.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1ba5860d-dea0-4b92-9fdd-e58204ea076f",
             "Value": {
                 "id": "2eead876-c3be-4272-8171-29b7a9dca7ab",
@@ -395,7 +376,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spId\/spId.yy",
+                "resourcePath": "sprites\/spIdle\/spIdle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -704,6 +685,25 @@
             }
         },
         {
+            "Key": "7c2423f4-ee5b-443a-bf2b-c59beb9c9a14",
+            "Value": {
+                "id": "8645238e-7026-4f47-a4c6-6603bbd5f98f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scDashJumping\/scDashJumping.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8e35dca5-23c6-4376-a023-e9e4d1476b3a",
             "Value": {
                 "id": "169d9b31-c9f7-4279-ba08-dff9b2b03bce",
@@ -856,25 +856,6 @@
             }
         },
         {
-            "Key": "ac2c7236-7ae1-4066-b080-612a0f6cde8e",
-            "Value": {
-                "id": "2b37e3c0-4e35-48e3-8f61-cfe29d6ff7b9",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/scrAnimationHandler\/scrAnimationHandler.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b21978ee-7674-4286-9417-7beb7f78fece",
             "Value": {
                 "id": "8c7fdb2c-9258-477a-885a-c2f71a990dd5",
@@ -948,25 +929,6 @@
                 ],
                 "resourcePath": "sprites\/spFalling\/spFalling.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "c9253a8c-02ce-47f2-add6-edf630b81efb",
-            "Value": {
-                "id": "1e3508bb-6b07-4594-84b1-0638e8bc2362",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/scrHandleGroundAnim\/scrHandleGroundAnim.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1255,6 +1217,25 @@
             }
         },
         {
+            "Key": "edbe9d5a-69c3-4ad6-864a-0db0b598290f",
+            "Value": {
+                "id": "de93c6f3-e806-4b44-9234-f63d9c7836ff",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scHorizontalMovement\/scHorizontalMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1a63552-0138-4fad-8321-0bdbddbc8867",
             "Value": {
                 "id": "5b3de598-253e-4985-a205-34f570a998d5",
@@ -1384,12 +1365,11 @@
         "b21978ee-7674-4286-9417-7beb7f78fece",
         "3ba2bc46-2736-4254-a48a-962f2f931f89",
         "8fcbe79e-434a-4748-921a-330159bec6b3",
-        "ac2c7236-7ae1-4066-b080-612a0f6cde8e",
-        "c9253a8c-02ce-47f2-add6-edf630b81efb",
-        "14d650ed-44b6-426d-8eb4-aa4d421665d0",
+        "7c2423f4-ee5b-443a-bf2b-c59beb9c9a14",
         "0711d369-20fa-4cd5-9015-79aea13b0553",
         "6b03871d-c3bc-42d6-9a9a-94e007f5bee5",
-        "7512f26d-6548-4c40-ac61-66dc9bf21d48"
+        "7512f26d-6548-4c40-ac61-66dc9bf21d48",
+        "edbe9d5a-69c3-4ad6-864a-0db0b598290f"
     ],
     "tutorial": ""
 }

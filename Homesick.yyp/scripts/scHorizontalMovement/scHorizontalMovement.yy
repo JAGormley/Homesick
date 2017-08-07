@@ -1,8 +1,8 @@
 {
-    "id": "c9253a8c-02ce-47f2-add6-edf630b81efb",
+    "id": "edbe9d5a-69c3-4ad6-864a-0db0b598290f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrHandleGroundAnim",
+    "name": "scHorizontalMovement",
     "IsCompatibility": false,
     "IsDnD": false
 }

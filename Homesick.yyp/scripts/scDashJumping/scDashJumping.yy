@@ -1,8 +1,8 @@
 {
-    "id": "14d650ed-44b6-426d-8eb4-aa4d421665d0",
+    "id": "7c2423f4-ee5b-443a-bf2b-c59beb9c9a14",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrHandleJumpAnim",
+    "name": "scDashJumping",
     "IsCompatibility": false,
     "IsDnD": false
 }

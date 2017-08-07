@@ -7,10 +7,12 @@ scrGetInput()
 var onGround = scrTileCollideAtPoints(CollisionTileMapId, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom])
 
 switch currentState {
-		
+
 	case states.idle:
 		if !onGround 
 			scEnterState(states.falling)
+		if MoveJumpAction 
+			scEnterState(states.jumping)
 		else if MoveCrouchAction
 			scEnterState(states.crouchingDown)
 		else if MoveRightAction || MoveLeftAction
@@ -22,8 +24,6 @@ switch currentState {
 			scEnterState(states.falling)
 		else if MoveDashAction {
 			scEnterState(states.dashing)
-			// @TODO where should this go??
-			alarm[0] = room_speed/3
 		} else if MoveJumpAction {
 			scEnterState(states.jumping)
 		} else if !(MoveRightAction || MoveLeftAction) {
@@ -32,10 +32,12 @@ switch currentState {
 		break 
 		
 	case states.jumping:
-		if !onGround 
+		if onGround 
 			scEnterState(states.idle)
-		// @TODO: do I need walking here?
-		break 
+		if !MoveJumpHeldAction && Velocity[AXES.y] > 0 {
+			scEnterState(states.falling)
+		}
+		break
 		
 	case states.dashing:
 		if !onGround
@@ -49,7 +51,7 @@ switch currentState {
 		break 	
 		
 	case states.dashJumping:
-		if !onGround
+		if onGround
 			scEnterState(states.idle)
 		break
 		
@@ -75,10 +77,9 @@ switch currentState {
 
 }
 
-//if keyboard_check_pressed(ord("C")) sprite_index = spId
-
 var script = ds_map_find_value(global.StatesToScripts, State)
 script_execute(script)
 
 Velocity[AXES.y] += Gravity
 scrPlayerControlAndCollide(CollisionTileMapId, TILE_SIZE, Velocity)
+scDirection(Velocity[AXES.x])

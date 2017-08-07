@@ -1,1 +1,1 @@
-if sprite_index == spCrouchingUp state = scWalking
+if sprite_index == spCrouchingUp scStateBrain(states.crouchingUp, true)
