@@ -15,5 +15,7 @@ switch state {
 		Velocity[AXES.y] = -JumpSpeed
 	case states.dashing:
 	case states.sliding:
-		alarm[0] = room_speed/3
+		alarm[0] = room_speed/2
+	case states.preFalling:
+		alarm[1] = room_speed/10
 }

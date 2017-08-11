@@ -609,6 +609,25 @@
             }
         },
         {
+            "Key": "6ab30175-5e4e-4292-aa20-ac03a8775ff8",
+            "Value": {
+                "id": "e7bbd3e5-d160-400b-9900-08091347daaf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scPreFalling\/scPreFalling.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6b03871d-c3bc-42d6-9a9a-94e007f5bee5",
             "Value": {
                 "id": "7fa00cef-0d82-47d5-9fb3-ab5a580b683a",
@@ -1366,6 +1385,7 @@
         "3ba2bc46-2736-4254-a48a-962f2f931f89",
         "8fcbe79e-434a-4748-921a-330159bec6b3",
         "7c2423f4-ee5b-443a-bf2b-c59beb9c9a14",
+        "6ab30175-5e4e-4292-aa20-ac03a8775ff8",
         "0711d369-20fa-4cd5-9015-79aea13b0553",
         "6b03871d-c3bc-42d6-9a9a-94e007f5bee5",
         "7512f26d-6548-4c40-ac61-66dc9bf21d48",

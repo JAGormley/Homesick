@@ -9,6 +9,7 @@ enum states {
 	idle,
 	walking,
 	jumping,
+	preFalling,
 	falling,
 	dashing,
 	dashJumping,

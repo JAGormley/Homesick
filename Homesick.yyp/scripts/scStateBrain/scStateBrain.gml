@@ -10,7 +10,7 @@ switch currentState {
 
 	case states.idle:
 		if !onGround 
-			scEnterState(states.falling)
+			scEnterState(states.preFalling)
 		if MoveJumpAction 
 			scEnterState(states.jumping)
 		else if MoveCrouchAction
@@ -21,7 +21,7 @@ switch currentState {
 	
 	case states.walking:
 		if !onGround
-			scEnterState(states.falling)
+			scEnterState(states.preFalling)
 		else if MoveDashAction {
 			scEnterState(states.dashing)
 		} else if MoveJumpAction {
@@ -34,17 +34,17 @@ switch currentState {
 	case states.jumping:
 		if onGround 
 			scEnterState(states.idle)
-		if !MoveJumpHeldAction && Velocity[AXES.y] > 0 {
+		if !MoveJumpHeldAction {
 			scEnterState(states.falling)
 		}
 		break
 		
 	case states.dashing:
 		if !onGround
-			scEnterState(states.falling)
+			scEnterState(states.preFalling)
 		if stateEventTriggered
 			scEnterState(states.idle)
-		if MoveCrouchAction
+		if MoveSlideAction
 			scEnterState(states.sliding)
 		if MoveJumpAction
 			scEnterState(states.dashJumping)
@@ -70,6 +70,13 @@ switch currentState {
 			scEnterState(states.idle)
 		break 
 		
+	case states.preFalling:
+		if MoveJumpAction
+			scEnterState(states.jumping)
+		if stateEventTriggered
+			scEnterState(states.falling)
+		break
+		
 	case states.falling:
 		if onGround
 			scEnterState(states.idle)
@@ -80,6 +87,7 @@ switch currentState {
 var script = ds_map_find_value(global.StatesToScripts, State)
 script_execute(script)
 
-Velocity[AXES.y] += Gravity
+if Velocity[AXES.y] + Gravity < MaxVelocity[AXES.y]
+	Velocity[AXES.y] += Gravity
 scrPlayerControlAndCollide(CollisionTileMapId, TILE_SIZE, Velocity)
 scDirection(Velocity[AXES.x])
