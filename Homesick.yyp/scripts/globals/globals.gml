@@ -15,7 +15,8 @@ enum states {
 	dashJumping,
 	crouchingUp,
 	crouchingDown,
-	sliding
+	sliding,
+	running
 }
 
 #macro STATES states

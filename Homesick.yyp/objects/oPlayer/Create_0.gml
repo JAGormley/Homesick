@@ -1,12 +1,13 @@
 /// Init
 Dir = -1					// direction the player is facing
 Velocity = [0, 0]
-Gravity=.6
+Gravity=.5
 MaxVelocity = [3, 16]
 JumpSpeed = 10.5
 Acceleration = 2
 DashAcceleration = 100
 DashSpeed = 2.5
+RunSpeed = 1.7
 Friction = 1
 Velocity = [0, 0]
 Jump = false

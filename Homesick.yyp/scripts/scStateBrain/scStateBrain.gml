@@ -24,12 +24,20 @@ switch currentState {
 			scEnterState(states.preFalling)
 		else if MoveDashAction {
 			scEnterState(states.dashing)
+		} else if MoveRunAction {
+			scEnterState(states.running)
 		} else if MoveJumpAction {
 			scEnterState(states.jumping)
 		} else if !(MoveRightAction || MoveLeftAction) {
 			scEnterState(states.idle)
 		}
 		break 
+	
+	case states.running:
+		if !MoveRunHeldAction {
+			scEnterState(states.idle)
+		}
+		break
 		
 	case states.jumping:
 		if onGround 
@@ -90,4 +98,3 @@ script_execute(script)
 if Velocity[AXES.y] + Gravity < MaxVelocity[AXES.y]
 	Velocity[AXES.y] += Gravity
 scrPlayerControlAndCollide(CollisionTileMapId, TILE_SIZE, Velocity)
-scDirection(Velocity[AXES.x])
