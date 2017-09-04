@@ -58,6 +58,7 @@ switch currentState {
 			scEnterState(states.dashJumping)
 		break 	
 		
+	case states.runJumping:
 	case states.dashJumping:
 		if onGround
 			scEnterState(states.idle)

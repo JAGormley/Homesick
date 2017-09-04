@@ -191,6 +191,25 @@
             }
         },
         {
+            "Key": "28deb07b-82bb-408f-9155-493980048aaa",
+            "Value": {
+                "id": "2579ad7f-192b-4dfd-88f3-eb6c377218d4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scRunJumping\/scRunJumping.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2aac5d42-e990-4b71-9ca4-f0bab73c0ede",
             "Value": {
                 "id": "bdc01e0e-980c-4b92-8ca7-7d91ae89b177",
@@ -1406,6 +1425,7 @@
         "7c2423f4-ee5b-443a-bf2b-c59beb9c9a14",
         "6ab30175-5e4e-4292-aa20-ac03a8775ff8",
         "c4a0ddfb-7c51-4ae9-96a8-557841c85dfa",
+        "28deb07b-82bb-408f-9155-493980048aaa",
         "6b03871d-c3bc-42d6-9a9a-94e007f5bee5",
         "7512f26d-6548-4c40-ac61-66dc9bf21d48",
         "edbe9d5a-69c3-4ad6-864a-0db0b598290f"
