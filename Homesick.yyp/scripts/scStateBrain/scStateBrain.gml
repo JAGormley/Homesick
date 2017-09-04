@@ -4,7 +4,9 @@ var currentState = argument0
 var stateEventTriggered = argument1
 
 scrGetInput()
-var onGround = scrTileCollideAtPoints(CollisionTileMapId, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom])
+var onGround = scrTileCollideAtPoints(CollisionTileMapId, noone, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]) == 1
+
+show_debug_message(string(State))
 
 switch currentState {
 
@@ -13,10 +15,10 @@ switch currentState {
 			scEnterState(states.preFalling)
 		if MoveJumpAction 
 			scEnterState(states.jumping)
-		else if MoveCrouchAction
-			scEnterState(states.crouchingDown)
 		else if MoveRightAction || MoveLeftAction
 			scEnterState(states.walking)
+		else if MoveCrouchAction
+			scEnterState(states.crouchingDown)
 		break
 	
 	case states.walking:
@@ -24,7 +26,7 @@ switch currentState {
 			scEnterState(states.preFalling)
 		else if MoveDashAction {
 			scEnterState(states.dashing)
-		} else if MoveRunAction {
+		} else if MoveRunAction || MoveRunHeldAction {
 			scEnterState(states.running)
 		} else if MoveJumpAction {
 			scEnterState(states.jumping)
@@ -36,7 +38,13 @@ switch currentState {
 	case states.running:
 		if !MoveRunHeldAction {
 			scEnterState(states.idle)
+		} else if MoveJumpAction {
+			scEnterState(states.runJumping)
+		} else if !(MoveRightAction || MoveLeftAction) {
+			scEnterState(states.idle)
 		}
+		if MoveSlideAction
+			scEnterState(states.sliding)
 		break
 		
 	case states.jumping:
@@ -45,6 +53,8 @@ switch currentState {
 		if !MoveJumpHeldAction {
 			scEnterState(states.falling)
 		}
+		if MoveRunHeldAction
+			scEnterState(states.runJumping)
 		break
 		
 	case states.dashing:
@@ -59,6 +69,12 @@ switch currentState {
 		break 	
 		
 	case states.runJumping:
+		if onGround
+			scEnterState(states.idle)
+		if !MoveRunHeldAction
+			scEnterState(states.jumping)
+		break	
+	
 	case states.dashJumping:
 		if onGround
 			scEnterState(states.idle)
@@ -96,6 +112,10 @@ switch currentState {
 var script = ds_map_find_value(global.StatesToScripts, State)
 script_execute(script)
 
-if Velocity[AXES.y] + Gravity < MaxVelocity[AXES.y]
+if Velocity[AXES.y] + Gravity < MaxVelocity[AXES.y] {
 	Velocity[AXES.y] += Gravity
+}
+
+show_debug_message(string(scCheckCellAbove())) 
+	
 scrPlayerControlAndCollide(CollisionTileMapId, TILE_SIZE, Velocity)

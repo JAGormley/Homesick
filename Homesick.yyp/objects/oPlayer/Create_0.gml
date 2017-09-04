@@ -8,6 +8,7 @@ Acceleration = 2
 DashAcceleration = 100
 DashSpeed = 2.5
 RunSpeed = 1.7
+RunJumpSpeed = 1
 Friction = 1
 Velocity = [0, 0]
 Jump = false

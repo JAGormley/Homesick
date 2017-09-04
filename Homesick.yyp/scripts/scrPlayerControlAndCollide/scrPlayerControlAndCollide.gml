@@ -14,6 +14,7 @@ x += velocity[AXES.x]
 if velocity[AXES.x] > 0 {
 	var tileRight = scrTileCollideAtPoints(
 		tileMapId,
+		noone,
 		[bbox_right-1, bbox_top], 
 		[bbox_right-1, bbox_bottom-1],
 		[bbox_right-1, (bbox_bottom-bbox_top)/2 + bbox_top],
@@ -28,6 +29,7 @@ if velocity[AXES.x] > 0 {
 } else {
 	var tileLeft = scrTileCollideAtPoints(
 		tileMapId, 
+		noone,
 		[bbox_left, bbox_top], 
 		[bbox_left, bbox_bottom-1],
 		[bbox_left, (bbox_bottom-bbox_top)/2 + bbox_top],
@@ -47,14 +49,14 @@ y += velocity[AXES.y];
 
 // Vertical collisions
 if velocity[AXES.y] > 0 {
-	var tileBottom = scrTileCollideAtPoints(tileMapId, [bbox_left, bbox_bottom-1], [bbox_right-1, bbox_bottom-1]);
+	var tileBottom = scrTileCollideAtPoints(tileMapId, noone, [bbox_left, bbox_bottom-1], [bbox_right-1, bbox_bottom-1]);
 	if tileBottom {
 		y = bbox_bottom & ~(tileSize-1);
 		y -= bbox_bottom-y;
 		velocity[@ AXES.y] = 0;
 	}
 } else {
-	var tileTop = scrTileCollideAtPoints(tileMapId, [bbox_left, bbox_top], [bbox_right-1, bbox_top]);
+	var tileTop = scrTileCollideAtPoints(tileMapId, noone, [bbox_left, bbox_top], [bbox_right-1, bbox_top]);
 	if tileTop {
 		y = bbox_top & ~(tileSize-1);
 		y += tileSize+y-bbox_top;
