@@ -12,12 +12,12 @@ switch state {
 	case states.jumping:
 	case states.dashJumping:
 	case states.runJumping:
-		if State != states.jumping && 
-			State != states.dashJumping &&
-			State != states.runJumping {
+		// clean this mess up (allows run and walk jump speeds to be toggled in-air)
+		//if State != states.jumping && 
+		//	State != states.dashJumping &&
+		//	State != states.runJumping {
 				Velocity[AXES.y] = -JumpSpeed
-				show_debug_message("jum")
-			}
+			//}
 				
 		break
 	case states.dashing:

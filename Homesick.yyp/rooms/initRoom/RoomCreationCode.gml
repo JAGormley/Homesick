@@ -11,6 +11,7 @@ ds_map_add(statesToSprites, states.crouchingUp, spCrouchingUp)
 ds_map_add(statesToSprites, states.crouchingDown, spCrouchingDown)
 ds_map_add(statesToSprites, states.falling, spFalling)
 ds_map_add(statesToSprites, states.preFalling, spFalling)
+ds_map_add(statesToSprites, states.landing, spLanding)
 
 var statesToScripts = ds_map_create()
 ds_map_add(statesToScripts, states.idle, scIdle)
@@ -25,6 +26,7 @@ ds_map_add(statesToScripts, states.crouchingDown, scCrouchingDown)
 ds_map_add(statesToScripts, states.falling, scFalling)
 ds_map_add(statesToScripts, states.preFalling, scPreFalling)
 ds_map_add(statesToScripts, states.running, scRunning)
+ds_map_add(statesToScripts, states.landing, scLanding)
 
 var statesToSpriteAnimSpeeds = ds_map_create()
 ds_map_add(statesToSpriteAnimSpeeds, states.idle, 10)
@@ -39,9 +41,10 @@ ds_map_add(statesToSpriteAnimSpeeds, states.crouchingDown, 35)
 ds_map_add(statesToSpriteAnimSpeeds, states.falling, 10)
 ds_map_add(statesToSpriteAnimSpeeds, states.preFalling, 10)
 ds_map_add(statesToSpriteAnimSpeeds, states.running, 14)
+ds_map_add(statesToSpriteAnimSpeeds, states.landing, 15)
 
 global.StatesToSprites = statesToSprites
 global.StatesToScripts = statesToScripts
 global.StatesToSpriteAnimSpeeds = statesToSpriteAnimSpeeds
 
-room_goto(2)
+room_goto(1)

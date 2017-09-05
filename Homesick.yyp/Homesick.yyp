@@ -419,6 +419,25 @@
             }
         },
         {
+            "Key": "46e975bf-390b-4ad0-9948-f11b016ed787",
+            "Value": {
+                "id": "bd01a74f-7240-426f-8c6a-35b429335f68",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scLanding\/scLanding.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "47b760a7-0c8f-4aa5-9b09-17d4a8671943",
             "Value": {
                 "id": "bba63d95-c50d-4aeb-8b24-3ba186957c46",
@@ -761,6 +780,25 @@
             }
         },
         {
+            "Key": "750b4748-fdc7-4d3b-8575-ff3e6d8462b2",
+            "Value": {
+                "id": "7173ae5e-56d7-4113-84ac-e3f1f8f9f68f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spLanding\/spLanding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7512f26d-6548-4c40-ac61-66dc9bf21d48",
             "Value": {
                 "id": "69cf56cc-38cd-4200-9b62-4883cc01f09a",
@@ -872,6 +910,25 @@
                 ],
                 "resourcePath": "views\/904daa01-78eb-4dac-be32-0ff15755e9e9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "921c1839-57cb-428f-99b0-71ae7180e0a9",
+            "Value": {
+                "id": "8c093dd3-abe3-4d64-8ba6-9b15654e7b58",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spLanding2\/spLanding2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1539,6 +1596,7 @@
         "6ab30175-5e4e-4292-aa20-ac03a8775ff8",
         "c4a0ddfb-7c51-4ae9-96a8-557841c85dfa",
         "28deb07b-82bb-408f-9155-493980048aaa",
+        "46e975bf-390b-4ad0-9948-f11b016ed787",
         "6b03871d-c3bc-42d6-9a9a-94e007f5bee5",
         "7512f26d-6548-4c40-ac61-66dc9bf21d48",
         "edbe9d5a-69c3-4ad6-864a-0db0b598290f",

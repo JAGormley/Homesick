@@ -17,7 +17,8 @@ enum states {
 	crouchingDown,
 	sliding,
 	running,
-	runJumping
+	runJumping,
+	landing
 }
 
 

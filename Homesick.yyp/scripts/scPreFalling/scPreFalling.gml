@@ -1,5 +1,6 @@
 var xInput = (MoveRightAction - MoveLeftAction) * Acceleration
-scHorizontalMovement(xInput, noone, true)
+var velMod = MoveRunHeldAction ? RunJumpHSpeed : JumpHSpeed
+scHorizontalMovement(xInput, velMod, true)
 
 Velocity[AXES.y] = max(Velocity[AXES.y], 0)
 
