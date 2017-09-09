@@ -628,25 +628,6 @@
             }
         },
         {
-            "Key": "66902149-fe61-4133-9591-3a77ff826793",
-            "Value": {
-                "id": "a29958e3-d8b2-4b3a-8826-ed0fc8eb1c4b",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "sprites\/pilot slide\/pilot slide.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "6760b9ad-e1a8-4dbf-b103-938573453060",
             "Value": {
                 "id": "bbb60da6-35f7-4b96-bfe4-21795c076edf",
@@ -910,25 +891,6 @@
                 ],
                 "resourcePath": "views\/904daa01-78eb-4dac-be32-0ff15755e9e9.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "921c1839-57cb-428f-99b0-71ae7180e0a9",
-            "Value": {
-                "id": "8c093dd3-abe3-4d64-8ba6-9b15654e7b58",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "sprites\/spLanding2\/spLanding2.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
