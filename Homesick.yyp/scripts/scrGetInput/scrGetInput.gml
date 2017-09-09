@@ -25,4 +25,4 @@ MoveJumpHeldAction = keyboard_check(vk_space) || gamepad_button_check(0, gp_face
 MoveCrouchAction = keyboard_check(vk_down) || gpDown
 MoveSlideAction = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_shoulderr)
 MoveRunAction = keyboard_check_pressed(ord("N")) || gamepad_button_check_pressed(0, gp_face1)
-MoveRunHeldAction = keyboard_check(ord("N")) || gamepad_button_check(0, gp_face1)
+MoveRunHeldAction = keyboard_check(ord("N")) || gamepad_button_check(0, gp_face1) || keyboard_check(vk_lshift)
