@@ -2,7 +2,7 @@
     "id": "5888cf8e-28ea-4461-a89c-14365b81a958",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "crystalTile1",
+    "name": "tsCrystalCave",
     "auto_tile_sets": [
         
     ],

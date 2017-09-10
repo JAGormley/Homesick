@@ -14,5 +14,5 @@ Friction = 1
 Velocity = [0, 0]
 Jump = false
 State = states.idle
-var layerId = layer_get_id("collision16")
+var layerId = layer_get_id("tlCollision16")
 CollisionTileMapId = layer_tilemap_get_id(layerId)

@@ -1,8 +1,8 @@
 {
-    "id": "3dc865d7-111d-4963-9833-a343ff94d7d0",
+    "id": "e2a70fcd-0e8d-4214-991a-618c7759eb57",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "collision",
+    "name": "tsCollision32",
     "auto_tile_sets": [
         
     ],
@@ -17,7 +17,7 @@
     "out_columns": 1,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "f58d4bb4-f579-458b-838e-ff3b6a423c34",
     "sprite_no_export": true,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "tile_animation": {
