@@ -127,6 +127,25 @@
             }
         },
         {
+            "Key": "31d68773-3cd5-48bd-80b3-014c4570927d",
+            "Value": {
+                "id": "4b9b7b9e-a84a-434c-9580-84b5b5e4a760",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/testMechanics\/testMechanics.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3a9dada0-0888-4717-ab3a-ea1a67924d6d",
             "Value": {
                 "id": "b107654e-2fb8-4082-8352-f45a3a1f3fc4",
