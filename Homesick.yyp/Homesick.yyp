@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "3632815f-5dd2-4a66-a266-38839c4421db",
+            "Value": {
+                "id": "0457e9f3-d1f6-4108-98f3-c6bad1b420d4",
+                "resourcePath": "sprites\\crystalRock\\crystalRock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3a9dada0-0888-4717-ab3a-ea1a67924d6d",
             "Value": {
                 "id": "b107654e-2fb8-4082-8352-f45a3a1f3fc4",
@@ -404,6 +412,14 @@
                 "id": "8645238e-7026-4f47-a4c6-6603bbd5f98f",
                 "resourcePath": "scripts\/scDashJumping\/scDashJumping.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7d4440f6-97a9-4912-a030-996f95a0ef3a",
+            "Value": {
+                "id": "6ec74430-2a1a-4fd5-95f5-8699de171ebc",
+                "resourcePath": "tilesets\\tileset5\\tileset5.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
